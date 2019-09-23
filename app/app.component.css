@@ -1,3 +1,7 @@
 p {
   font-family: Lato;
 }
+
+ckeditor {
+  font-size: x-large;
+}
