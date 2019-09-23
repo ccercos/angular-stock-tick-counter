@@ -28,6 +28,6 @@ export class AppComponent  {
     }
     this.tickRender = this.tickRender.replace(/<del>/gi,"");
     this.tickRender = this.tickRender.replace(/<\/del>/gi,"");
-    this.tickRender = this.tickRender.replace(/ABC/gi,"<del>AB</del>");  
+    this.tickRender = this.tickRender.replace(/ABC/gi,"<del>ABC</del>");  
   }
 }
