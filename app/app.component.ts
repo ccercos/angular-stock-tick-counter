@@ -19,17 +19,15 @@ export class AppComponent  {
 
   renderStock(newChar: string): void {
     var temp = this.tick;
-  //  console.log(temp.charAt(temp.length-2) + " " +temp.charCodeAt(temp.length-2));
-  //  console.log(newChar.charAt(0) + " " + newChar.charCodeAt(0));
     if(temp.charCodeAt(temp.length-1) == (newChar.charCodeAt(0) - 1)){
       this.tickRender += newChar;
       this.tick += newChar;
-    } else if (newChar == "a") {
+    } else if (newChar == "A") {
       this.tickRender += " " + newChar;
       this.tick += newChar;
     }
     this.tickRender = this.tickRender.replace(/<del>/gi,"");
     this.tickRender = this.tickRender.replace(/<\/del>/gi,"");
-    this.tickRender = this.tickRender.replace(/abc/gi,"<del>abc</del>");  
+    this.tickRender = this.tickRender.replace(/ABC/gi,"<del>AB</del>");  
   }
 }
